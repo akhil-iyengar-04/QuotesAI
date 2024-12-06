@@ -71,10 +71,11 @@ function HeroPage() {
         className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-10"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <h3 className="text-center text-sm font-semibold text-gray-500 pb-2">
-            OUR SERVICES
-          </h3>
-          <p className="max-w-[42rem] text-gray-700 sm:text-lg sm:leading-7">
+        <h3 className="text-center text-sm font-semibold text-white pb-2">
+          OUR SERVICES
+        </h3>
+
+          <p className="max-w-[42rem] text-muted-foreground sm:text-lg sm:leading-7">
             Leveraging Operand&apos;s capabilities, we offer tailored strategies to address your store&apos;s unique data and challenges.
           </p>
         </div>
