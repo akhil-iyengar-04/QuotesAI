@@ -57,7 +57,7 @@ function HeroPage() {
           className="w-full h-[500px] lg:h-[540px] rounded-[inherit] border object-contain shadow-lg"
           controls
         >
-          <source src="/videos/operand-overview.mp4" type="video/mp4" />
+          <source src="/video/operand-overview.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
           <BorderBeam size={250} />
