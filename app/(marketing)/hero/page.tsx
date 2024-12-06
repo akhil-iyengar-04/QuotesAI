@@ -53,14 +53,15 @@ function HeroPage() {
 
         {/* Hero Image */}
         <div className="relative rounded-xl mx-auto flex flex-col items-center lg:max-w-[1000px] overflow-hidden mt-10">
-          <iframe
-            className="w-full h-[500px] lg:h-[540px] rounded-[inherit] border object-contain shadow-lg"
-            src="https://www.youtube.com/embed/OUTrgPXNgOQ?rel=0"
-            title="Operand Overview"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <iframe
+          className="w-full h-[500px] lg:h-[540px] rounded-[inherit] border object-contain shadow-lg"
+          src="https://www.youtube.com/embed/OUTrgPXNgOQ?si=z-P1Oujpyem12Amc"
+          title="Operand Overview"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
           <BorderBeam size={250} />
         </div>
       </section>
