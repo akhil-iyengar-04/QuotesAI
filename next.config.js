@@ -1,8 +1,12 @@
 const nextConfig = {
   output: "export",
-  basePath: "/QuotesAI", // Matches your repository name
-  assetPrefix: "/QuotesAI/", // Prefix for static assets
-  trailingSlash: true, // Ensures /about becomes /about/index.html
+  basePath: "/QuotesAI",
+  assetPrefix: "/QuotesAI/",
+  trailingSlash: true,
+  webpack(config) {
+    console.log("Building with assetPrefix:", config.output.publicPath);
+    return config;
+  },
 };
 
 module.exports = nextConfig;
