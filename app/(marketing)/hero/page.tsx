@@ -59,14 +59,15 @@ function HeroPage() {
               controls
               preload="auto"
             >
-              <source src="/video/operand-overview.mp4" type="video/mp4" />
+              <source src="/videos/operand-overview.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="absolute inset-0">
-              <BorderBeam size={200} />
+            <div className="absolute inset-0 pointer-events-none">
+              <BorderBeam size={250} />
             </div>
           </div>
         </div>
+
       </section>
 
       {/* Features/Services Section */}
