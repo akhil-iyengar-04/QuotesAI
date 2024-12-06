@@ -1,8 +1,9 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Enable static HTML export
-  trailingSlash: true, // Optional: Add trailing slashes to URLs
+  output: "export", // Static export for GitHub Pages
+  basePath: "/QuotesAI", // Replace with your repo name
+  assetPrefix: "/QuotesAI", // Ensure assets are loaded from the correct path
+  trailingSlash: true, // Adds trailing slashes for static files
 };
 
 module.exports = nextConfig;
