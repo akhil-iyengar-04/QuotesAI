@@ -53,15 +53,13 @@ function HeroPage() {
 
         {/* Hero Image */}
         <div className="relative rounded-xl mx-auto flex flex-col items-center lg:max-w-[1000px] overflow-hidden mt-10">
-        <iframe
+        <video
           className="w-full h-[500px] lg:h-[540px] rounded-[inherit] border object-contain shadow-lg"
-          src="https://www.youtube-nocookie.com/embed/OUTrgPXNgOQ"
-          title="Operand Overview"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
+          controls
+        >
+          <source src="/videos/operand-overview.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
           <BorderBeam size={250} />
         </div>
       </section>
