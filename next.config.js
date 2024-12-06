@@ -1,12 +1,8 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  basePath: "/QuotesAI",
-  assetPrefix: "/QuotesAI/",
-  trailingSlash: true,
-  webpack(config) {
-    console.log("Building with assetPrefix:", config.output.publicPath);
-    return config;
-  },
+  reactStrictMode: true,
+  output: 'export', // Static export for deployment
+  assetPrefix: '/', // Required for compatibility with `next/font`
 };
 
 module.exports = nextConfig;
