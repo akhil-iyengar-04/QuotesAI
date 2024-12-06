@@ -5,6 +5,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import MobileNav from "@/components/mobile-nav";
 import { SiteFooter } from "@/components/site-footer";
+import "../globals.css"
 
 const inter = Inter({ subsets: ["latin"] });
 

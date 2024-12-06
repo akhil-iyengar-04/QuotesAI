@@ -21,8 +21,8 @@ import { getCurrentUser } from "@/lib/session";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Quote AI",
-  description: "Generate Daily Quotes",
+  title: "Operand",
+  description: "AI data analyst for e-commerce",
 };
 
 export default function RootLayout({

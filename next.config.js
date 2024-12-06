@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Static export for GitHub Pages
-  basePath: "/QuotesAI", // Replace with your repo name
-  assetPrefix: "/QuotesAI", // Ensure assets are loaded from the correct path
-  trailingSlash: true, // Adds trailing slashes for static files
+  output: "export",
+  basePath: "/QuotesAI", // Matches your GitHub repo name
+  assetPrefix: "/QuotesAI",
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
