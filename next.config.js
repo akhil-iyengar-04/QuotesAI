@@ -1,8 +1,8 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['lh3.googleusercontent.com'],
-      },
-}
+  output: "export", // Enable static HTML export
+  trailingSlash: true, // Optional: Add trailing slashes to URLs
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
