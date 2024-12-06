@@ -53,13 +53,16 @@ function HeroPage() {
 
         {/* Hero Image */}
         <div className="relative rounded-xl mx-auto flex flex-col items-center lg:max-w-[1000px] overflow-hidden mt-10">
-        <video
-          className="w-full h-[500px] lg:h-[540px] rounded-[inherit] border object-contain shadow-lg"
-          controls
-        >
-          <source src="/video/operand-overview.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          <div className="relative z-10">
+            <video
+              className="w-full h-[500px] lg:h-[540px] rounded-[inherit] border object-contain shadow-lg"
+              controls
+              preload="auto"
+            >
+              <source src="/videos/operand-overview.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <BorderBeam size={250} />
         </div>
       </section>
