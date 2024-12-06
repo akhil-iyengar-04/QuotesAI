@@ -1,8 +1,7 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/QuotesAI", // Matches your GitHub repo name
-  assetPrefix: "/QuotesAI",
+  basePath: "/QuotesAI", // Matches your GitHub repository name
+  assetPrefix: "/QuotesAI/",
   trailingSlash: true,
 };
 
