@@ -1,14 +1,12 @@
-import { BentoDemo } from "@/components/bento-features";
-import { Icons } from "@/components/icons";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import BlurIn from "@/components/magicui/blur-in";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import ShineBorder from "@/components/magicui/shine-border";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import React from "react";
-import Image from 'next/image';
-
+import { FAQSection } from "@/components/FAQSection";
 
 function HeroPage() {
   return (
@@ -67,7 +65,6 @@ function HeroPage() {
             </div>
           </div>
         </div>
-
       </section>
 
       {/* Features/Services Section */}
@@ -76,9 +73,9 @@ function HeroPage() {
         className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-10"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-        <h3 className="text-center text-sm font-semibold text-white pb-2">
-          OUR SERVICES
-        </h3>
+          <h3 className="text-center text-sm font-semibold text-white pb-2">
+            OUR SERVICES
+          </h3>
 
           <p className="max-w-[42rem] text-muted-foreground sm:text-lg sm:leading-7">
             Leveraging Operand&apos;s capabilities, we offer tailored strategies to address your store&apos;s unique data and challenges.
@@ -185,6 +182,9 @@ function HeroPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Flexibility Section */}
       <section
