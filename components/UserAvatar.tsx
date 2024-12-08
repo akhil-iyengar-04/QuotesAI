@@ -1,4 +1,7 @@
-import { User } from '@prisma/client'
+interface User {
+  image: string | null;
+  name: string | null;
+}
 import { AvatarProps } from '@radix-ui/react-avatar'
 
 import { Icons } from '../components/icons'

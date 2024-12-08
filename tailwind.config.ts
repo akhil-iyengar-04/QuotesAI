@@ -45,8 +45,8 @@ const config: Config = {
           to: { height: "0" },
         },
         "reveal": {
-          "0%": { opacity: "0", transform: "translateY(20px)" }, // Changed opacity to string
-          "100%": { opacity: "1", transform: "translateY(0)" },  // Changed opacity to string
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
       animation: {
