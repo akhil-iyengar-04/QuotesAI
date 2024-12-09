@@ -27,7 +27,7 @@ export function FAQSection() {
               <AccordionTrigger>How do you keep my data secure?</AccordionTrigger>
               <AccordionContent>
                 We take data security seriously. While we&apos;re early-stage, we
-                securely store data using trusted cloud providers like BigQuery
+                securely store data using trusted cloud providers
                 and rely on industry-standard APIs, including Shopify&apos;s, with
                 top-grade security. Plus, we sign NDAs to guarantee your data
                 remains private.
