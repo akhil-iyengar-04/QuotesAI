@@ -7,6 +7,9 @@ import BlurIn from "@/components/magicui/blur-in";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import ShineBorder from "@/components/magicui/shine-border";
 import { FAQSection } from "@/components/FAQSection";
+import dynamic from "next/dynamic";
+
+const TextReveal = dynamic(() => import("@/components/TextReveal"), { ssr: false });
 
 function HeroPage() {
   return (
@@ -14,7 +17,6 @@ function HeroPage() {
       {/* Hero Section */}
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-20">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-
           {/* Backed by Y Combinator Banner */}
           <div className="mt-8">
             <ShineBorder
@@ -49,7 +51,7 @@ function HeroPage() {
           </div>
         </div>
 
-        {/* Hero Image */}
+        {/* Hero Video Section */}
         <div className="relative rounded-xl mx-auto flex flex-col items-center lg:max-w-[1000px] overflow-hidden mt-10">
           <div className="relative w-full h-[500px] lg:h-[540px]">
             <video
@@ -73,10 +75,7 @@ function HeroPage() {
         className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-10"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <h3 className="text-center text-sm font-semibold text-white pb-2">
-            OUR SERVICES
-          </h3>
-
+          <h3 className="text-center text-sm font-semibold text-white pb-2">OUR SERVICES</h3>
           <p className="max-w-[42rem] text-muted-foreground sm:text-lg sm:leading-7">
             Leveraging Operand&apos;s capabilities, we offer tailored strategies to address your store&apos;s unique data and challenges.
           </p>
@@ -160,9 +159,7 @@ function HeroPage() {
 
             {/* Story 2 Card */}
             <div className="relative overflow-hidden rounded-lg border bg-background p-6 text-left">
-              <h3 className="text-xl font-semibold mb-2">
-                $300K in Annual Savings
-              </h3>
+              <h3 className="text-xl font-semibold mb-2">$300K in Annual Savings</h3>
               <p className="text-sm text-muted-foreground">
                 Operand&apos;s optimization of promotions and pricing enabled a brand to trim $300,000 in annual losses,
                 transforming confusing discounting strategies into predictable growth.
@@ -183,8 +180,30 @@ function HeroPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <FAQSection />
+      {/* FAQ + TextReveal Section */}
+      <section
+          id="faq"
+          className="container py-8 md:py-12 lg:py-16 bg-slate-50 dark:bg-transparent"
+        >
+          <div className="max-w-[64rem] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+              {/* Left Column: FAQ */}
+              <div>
+                <FAQSection />
+              </div>
+
+              {/* Right Column: TextReveal */}
+              {/* On mobile: center vertically and horizontally. On desktop: shift down/right using margin classes. */}
+              <div className="flex items-center justify-center md:items-start md:justify-start md:mt-[10rem] md:ml-[8rem]">
+                <TextReveal
+                  text="Grow your store securely, effortlessly, and transparently with Operand."
+                  lineBreaks={[16, 25, 39, 58]}
+                  textClassName="font-heading text-2xl md:text-4xl font-bold text-primary text-left"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
       {/* Flexibility Section */}
       <section

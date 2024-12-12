@@ -1,31 +1,33 @@
 import * as React from "react"
-
-// import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
-// import { ModeToggle } from "@/components/mode-toggle"
+import Link from "next/link"
+import Image from "next/image" // Assuming we have a linkedin.svg in public folder
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
-    <footer className={cn(className)}>
-      <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
-        <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-          <p className="text-center text-sm leading-loose md:text-left">
-            
-            {/* . The source code is available on{" "}
-            <a
-              href="/#"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              GitHub
-            </a> */}
-            
-          </p>
+    <footer className={cn("border-t border-border py-4", className)}>
+      <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
+        {/* Left side: Typical footer text */}
+        <div className="text-center md:text-left text-sm text-muted-foreground">
+          © {new Date().getFullYear()} Operand. All rights reserved.
         </div>
-        {/* <ModeToggle /> */}
-      
+
+        {/* Right side: Social icon (LinkedIn) */}
+        <div className="flex items-center justify-end gap-2">
+          <Link
+            href="https://www.linkedin.com/company/tryoperand"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/linkedin.svg"
+              alt="LinkedIn"
+              width={24}
+              height={24}
+              className="hover:opacity-80 transition-opacity duration-150"
+            />
+          </Link>
+        </div>
       </div>
     </footer>
   )
