@@ -52,21 +52,21 @@ function HeroPage() {
         </div>
 
         {/* Hero Video Section, use correct name for video file path (/video/operand-overview-akhil.mp4)  */}
-        {/* <div className="relative rounded-xl mx-auto flex flex-col items-center lg:max-w-[1000px] overflow-hidden mt-10">
+        <div className="relative rounded-xl mx-auto flex flex-col items-center lg:max-w-[1000px] overflow-hidden mt-10">
           <div className="relative w-full h-[500px] lg:h-[540px]">
             <video
               className="w-full h-full rounded-[inherit] border object-contain shadow-lg"
               controls
               preload="auto"
             >
-              <source src="/video/operand-overview-akhili.mp4" type="video/mp4" />
+              <source src="/video/operand-overview-akhil.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 pointer-events-none">
               <BorderBeam size={250} />
             </div>
           </div>
-        </div> */}
+        </div>
       </section>
 
       {/* Features/Services Section */}
