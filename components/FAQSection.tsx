@@ -47,9 +47,10 @@ export function FAQSection() {
         <AccordionItem value="item-4">
           <AccordionTrigger>How much does Operand cost?</AccordionTrigger>
           <AccordionContent>
-            During the holiday season, our pricing is simple and performance-based: 
-            no upfront fees and you only pay if we achieve the agreed-upon results.
-            We work together to set clear goals and ensure you&apos;re happy with the results.
+            Operand offers a flexible monthly pricing model tailored to your store&apos;s needs. 
+            Costs depend on your store&apos;s size, chosen service offerings, frequency of data tasks, 
+            and any additional implementation requirements. Plus, we stand by our work with a 
+            money-back guarantee if you&apos;re not satisfied.
           </AccordionContent>
         </AccordionItem>
 
@@ -64,12 +65,22 @@ export function FAQSection() {
 
         <AccordionItem value="item-6">
           <AccordionTrigger>
-            Will Operand fit into my existing workflows?
+            Will Operand work with my existing data?
           </AccordionTrigger>
           <AccordionContent>
             Operand integrates seamlessly with Shopify, Klaviyo, Amazon,
             Walmart, Etsy, BigQuery, CSVs, Google/Meta Ads, and more. Need
             custom integrations? We&apos;re happy to build them for you.
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-7">
+          <AccordionTrigger>How does Operand fit into my daily workflow?</AccordionTrigger>
+          <AccordionContent>
+            Using Operand is as simple as sending us an email with your data questions or tasks as often as you like. 
+            Our proprietary AI data analyst software performs the requested analysis, generates findings in the format most convenient for you, 
+            and creates actionable recommendations. If needed, we can even help automate the implementation of these recommendations 
+            to save you time and effort.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
