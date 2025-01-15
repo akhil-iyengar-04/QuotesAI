@@ -77,9 +77,8 @@ function HeroPage() {
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h3 className="text-center text-sm font-semibold text-white pb-2">OUR SERVICES</h3>
           <p className="max-w-[42rem] text-muted-foreground sm:text-lg sm:leading-7">
-            We leverage our AI data analyst software to deliver sophisticated, professional-grade insights and 
-            actionable strategies tailored for your store. Experience faster, more cost-effective, and highly 
-            accurate data analysis that outperforms traditional methods.
+            Leveraging Operand&apos;s capabilities, we deliver sophisticated insights & strategies 
+            tailored to your store and its data. 
           </p>
         </div>
 
@@ -95,18 +94,9 @@ function HeroPage() {
             />
             <h3 className="font-bold text-xl mb-2">Customer Segmentation</h3>
             <ul className="list-disc list-inside text-sm text-muted-foreground">
-              <li>
-                **RFM & CLV Analysis**: Conduct RFM and CLV analyses 
-                to identify loyal or at-risk customers, enabling targeted re-engagement strategies.
-              </li>
-              <li>
-                **Collaborative Filtering**: Implement advanced collaborative filtering techniques to segment customers for 
-                personalized product and promotion recommendations, enhancing individualized email marketing campaigns.
-              </li>
-              <li>
-                **Predictive Modeling**: Analyze comprehensive order histories and utilize predictive modeling to identify 
-                high-potential customers for subscription services and newsletter sign-ups, driving sustained engagement.
-              </li>
+              <li>Identify loyal or at-risk customers using RFM and CLV analysis.</li>
+              <li>Segment customers with collaborative filtering & generate personalized outreach.</li>
+              <li>Target high-potential buyers for special programs with predictive modeling.</li>
             </ul>
           </div>
 
@@ -121,19 +111,9 @@ function HeroPage() {
             />
             <h3 className="font-bold text-xl mb-2">Pricing Optimization</h3>
             <ul className="list-disc list-inside text-sm text-muted-foreground">
-              <li>
-                **Dynamic Pricing Strategies**: Analyze revenue uplift across diverse price points, factoring in 
-                seasonality and market conditions to recommend optimal dynamic pricing models that maximize profitability.
-              </li>
-              <li>
-                **Promotion Efficacy Evaluation**: Utilize statistical models to evaluate the effectiveness of 
-                various promotions (e.g., free shipping, coupons, percentage discounts) and recommend data-driven 
-                approaches for markdowns and discount code campaigns.
-              </li>
-              <li>
-                **Margin Optimization**: Assess product-specific COGS and TACoS data to provide strategic recommendations for optimizing profit margins 
-                across products, sales channels, and regional markets.
-              </li>
+              <li>Manage dynamic pricing using revenue and seasonality analysis.</li>
+              <li>Evaluate promotions to recommend effective discount strategies.</li>
+              <li>Improve profit margins across channels by analyzing product & advertising costs.</li>
             </ul>
           </div>
 
@@ -148,19 +128,9 @@ function HeroPage() {
             />
             <h3 className="font-bold text-xl mb-2">Ad Spend Management</h3>
             <ul className="list-disc list-inside text-sm text-muted-foreground">
-              <li>
-                **Ad Strategy Efficiency**: Measure and analyze CTR, impression rates, and 
-                conversion rates across products, regions, and advertising channels to assess the effectiveness 
-                of current ad strategies.
-              </li>
-              <li>
-                **Budget Allocation Optimization**: Calculate Conversion Rate to Acquisition Cost ratios to determine 
-                the most efficient budget distribution across various marketing channels, ensuring optimal ROI.
-              </li>
-              <li>
-                **Keyword Strategy Enhancement**: Identify and implement high-performing keyword strategies to 
-                maximize PPC ROI, scaling ad performance through data-driven keyword optimizations.
-              </li>
+              <li>Analyze ad performance across channels using CTR and conversion rates.</li>
+              <li>Optimize budgets by calculating acquisition cost ratios.</li>
+              <li>Maximize PPC ROI with high-performing keyword strategies.</li>
             </ul>
           </div>
         </div>
@@ -181,33 +151,33 @@ function HeroPage() {
           {/* Story 1 Card */}
           <div className="relative overflow-hidden rounded-lg border bg-background p-6 text-left">
             <h3 className="text-xl font-semibold mb-2">
-              4x Revenue & 3x Conversion Rates
+              4x Revenue & 3x Conversion Rates on Email Campaigns
             </h3>
             <p className="text-sm text-muted-foreground">
-              By analyzing customer purchase history and segmenting based on RFM & CLV scores, 
-              Operand helped a brand generate personalized email campaigns that increased revenue per recipient by 4x and tripled conversion rates.
+              Analyzed customer purchase history to create high value segments for subscription & promotion sales, 
+              provide personalized product recommendations, and write customer-specific email content.
             </p>
           </div>
 
           {/* Story 2 Card */}
           <div className="relative overflow-hidden rounded-lg border bg-background p-6 text-left">
             <h3 className="text-xl font-semibold mb-2">
-              $300K in Average Annual Savings
+              $300K in Average Savings Across Sales Channels
             </h3>
             <p className="text-sm text-muted-foreground">
-              Operand evaluated pricing patterns, seasonality effects, and product-specific costs to recommend 
-              pricing adjustments that saved retailers an average of $300,000 annually. These recommendations included optimizing discount campaigns and identifying underperforming strategies.
+              Evaluated pricing patterns, seasonality effects & product-specific costs across D2C and wholesale channels to recommend 
+              pricing adjustments, discount campaigns, and product bundling strategies.
             </p>
           </div>
 
           {/* Story 3 Card */}
           <div className="relative overflow-hidden rounded-lg border bg-background p-6 text-left">
             <h3 className="text-xl font-semibold mb-2">
-              Hours Saved on Weekly Ad Reporting
+              20+ Hours Saved on Weekly Ad Reporting
             </h3>
             <p className="text-sm text-muted-foreground">
-              Operand automated analysis of click-through rates, conversion rates, and cost-per-acquisition metrics 
-              across ad channels. This allowed a client&apos;s team to shift focus from manual data entry to refining their campaign strategies.
+              Automated analysis of click-through rates, conversion rates, and cost-per-acquisition metrics 
+              across ad channels, creating regular reports for marketing teams to optimize ad spend across channels, regions, and campaigns.
             </p>
           </div>
         </div>

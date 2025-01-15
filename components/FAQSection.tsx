@@ -47,7 +47,7 @@ export function FAQSection() {
         <AccordionItem value="item-4">
           <AccordionTrigger>How much does Operand cost?</AccordionTrigger>
           <AccordionContent>
-            Operand offers a flexible monthly pricing model tailored to your store&apos;s needs. 
+            We offer a flexible monthly pricing model tailored to your needs. 
             Costs depend on your store&apos;s size, chosen service offerings, frequency of data tasks, 
             and any additional implementation requirements. Plus, we stand by our work with a 
             money-back guarantee if you&apos;re not satisfied.
@@ -69,7 +69,7 @@ export function FAQSection() {
           </AccordionTrigger>
           <AccordionContent>
             Operand integrates seamlessly with Shopify, Klaviyo, Amazon,
-            Walmart, Etsy, BigQuery, CSVs, Google/Meta Ads, and more. Need
+            Walmart, Etsy, BigQuery, Excel files, Google/Meta Ads, CRMs, and more. Need
             custom integrations? We&apos;re happy to build them for you.
           </AccordionContent>
         </AccordionItem>
@@ -77,10 +77,9 @@ export function FAQSection() {
         <AccordionItem value="item-7">
           <AccordionTrigger>How does Operand fit into my daily workflow?</AccordionTrigger>
           <AccordionContent>
-            Using Operand is as simple as sending us an email with your data questions or tasks as often as you like. 
-            Our proprietary AI data analyst software performs the requested analysis, generates findings in the format most convenient for you, 
-            and creates actionable recommendations. If needed, we can even help automate the implementation of these recommendations 
-            to save you time and effort.
+            Simply email us your data questions or tasks as often as you like. 
+            We use our AI data analyst to perform the requested analysis and send you our final recommendations in whatever format you prefer within 24 hours.
+            If needed, we can also automate the implementation of these recommendations.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
