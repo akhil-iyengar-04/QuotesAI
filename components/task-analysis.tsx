@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { ChevronDown } from "lucide-react"
 
 export function TaskAnalysis() {
   return (
@@ -27,7 +28,11 @@ export function TaskAnalysis() {
             className="mb-4 overflow-hidden rounded-lg border-2 border-border bg-card"
           >
             <AccordionTrigger className="px-6 py-4 text-base font-medium hover:no-underline">
-              Understanding Task
+              {/* Update 1 */}
+              <div className="flex items-center justify-between px-6 py-4 text-base font-medium">
+                <span>Understanding Task</span>
+                <ChevronDown className="h-4 w-4 shrink-0" />
+              </div>
             </AccordionTrigger>
             <AccordionContent className="border-t border-border bg-background px-6 py-4">
               {/* Content will be added later */}
@@ -39,7 +44,11 @@ export function TaskAnalysis() {
             className="overflow-hidden rounded-lg border-2 border-border bg-card relative before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-white/50 before:animate-border-beam"
           >
             <AccordionTrigger className="px-6 py-4 text-base font-medium hover:no-underline">
-              Performing Analysis
+              {/* Update 2 */}
+              <div className="flex items-center justify-between px-6 py-4 text-base font-medium">
+                <span>Performing Analysis</span>
+                <ChevronDown className="h-4 w-4 shrink-0 transform rotate-180" />
+              </div>
             </AccordionTrigger>
             <AccordionContent className="border-t border-border bg-background px-6 py-4">
               <div className="space-y-6">

@@ -9,8 +9,8 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Operand - AI Data Analyst for E-commerce",
-  description: "Transform deep, accurate insights into instant action for your e-commerce store.",
+  title: "Operand - AI To Run Consumer Brands",
+  description: "Making data-driven decisions for retail & e-commerce.",
 }
 
 export default function RootLayout({
@@ -20,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
         <div className="relative flex min-h-screen flex-col">
           <MainNav />
@@ -31,6 +34,3 @@ export default function RootLayout({
   )
 }
 
-
-
-import './globals.css'
