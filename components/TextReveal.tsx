@@ -1,59 +1,55 @@
-"use client";
+"use client"
 
-import React, { useState, useEffect, useRef } from "react";
+import type React from "react"
+import { useState, useEffect, useRef } from "react"
 
 interface TextRevealProps {
-  text: string; // Full text to animate
-  lineBreaks: number[]; // Indices where to split text into lines
-  textClassName?: string; // Optional class customization
+  text: string
+  lineBreaks: number[]
+  textClassName?: string
 }
 
 const TextReveal: React.FC<TextRevealProps> = ({ text, lineBreaks, textClassName }) => {
-  const [visibleLines, setVisibleLines] = useState<number>(0); // Tracks how many lines are visible
-  const ref = useRef<HTMLDivElement>(null);
+  const [visibleLines, setVisibleLines] = useState<number>(0)
+  const ref = useRef<HTMLDivElement>(null)
 
-  // Split text into lines based on `lineBreaks`
   const textLines = lineBreaks.reduce<string[]>((lines, breakIndex, i) => {
-    const prevBreak = i === 0 ? 0 : lineBreaks[i - 1];
-    lines.push(text.slice(prevBreak, breakIndex).trim());
-    return lines;
-  }, []);
-  textLines.push(text.slice(lineBreaks[lineBreaks.length - 1]).trim()); // Add last part
+    const prevBreak = i === 0 ? 0 : lineBreaks[i - 1]
+    lines.push(text.slice(prevBreak, breakIndex).trim())
+    return lines
+  }, [])
+  textLines.push(text.slice(lineBreaks[lineBreaks.length - 1]).trim())
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Start revealing lines when the component is in view
-          let lineIndex = 0;
+          let lineIndex = 0
           const interval = setInterval(() => {
             setVisibleLines((prev) => {
               if (prev < textLines.length) {
-                lineIndex++;
-                return prev + 1;
+                lineIndex++
+                return prev + 1
               } else {
-                clearInterval(interval);
-                return prev;
+                clearInterval(interval)
+                return prev
               }
-            });
-          }, 400); // Adjust delay between lines
+            })
+          }, 400)
         }
       },
-      { threshold: 0.1 }
-    );
+      { threshold: 0.1 },
+    )
 
-    if (ref.current) observer.observe(ref.current);
+    if (ref.current) observer.observe(ref.current)
 
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
-    };
-  }, [textLines]);
+      if (ref.current) observer.unobserve(ref.current)
+    }
+  }, [textLines])
 
   return (
-    <div
-      ref={ref}
-      className="flex flex-col items-start justify-center bg-transparent space-y-2"
-    >
+    <div ref={ref} className="flex flex-col items-start justify-center bg-transparent space-y-2">
       {textLines.map((line, index) => (
         <span
           key={index}
@@ -66,7 +62,8 @@ const TextReveal: React.FC<TextRevealProps> = ({ text, lineBreaks, textClassName
         </span>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default TextReveal;
+export default TextReveal
+
