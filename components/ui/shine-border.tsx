@@ -3,7 +3,11 @@
 import type React from "react"
 import { cn } from "@/lib/utils"
 
-type TColorProp = `#${string}` | `#${string}`[]
+type TColorProp =
+  | `#${string}`
+  | `rgba(${number},${number},${number},${number})`
+  | (`#${string}` | `rgba(${number},${number},${number},${number})`)[]
+
 interface ShineBorderProps {
   borderRadius?: number
   borderWidth?: number
@@ -38,7 +42,7 @@ export default function ShineBorder({
             "--border-width": `${borderWidth}px`,
             "--border-radius": `${borderRadius}px`,
             "--shine-pulse-duration": `${duration}s`,
-            "--background-radial-gradient": `radial-gradient(transparent,transparent, ${!(color instanceof Array) ? color : color.join(",")},transparent,transparent)`,
+            "--background-radial-gradient": `radial-gradient(transparent,transparent, ${Array.isArray(color) ? color.join(",") : color},transparent,transparent)`,
           } as React.CSSProperties
         }
         className={`absolute inset-0 rounded-[--border-radius] before:absolute before:inset-[0] before:rounded-[--border-radius] before:p-[--border-width] before:bg-[length:300%_300%] before:[background-image:var(--background-radial-gradient)] motion-safe:before:animate-[shine-pulse_var(--shine-pulse-duration)_infinite_linear]`}

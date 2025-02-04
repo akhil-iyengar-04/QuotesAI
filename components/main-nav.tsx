@@ -24,7 +24,7 @@ export function MainNav() {
           {/* Request a Demo Button */}
           <div className="flex-1 flex justify-end items-center gap-8">
             <Link
-              href="/placeholder-whitepaper.pdf"
+              href="/whitepaper.pdf"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener noreferrer"

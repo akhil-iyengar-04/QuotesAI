@@ -34,9 +34,9 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative hidden lg:flex items-end justify-center">
-          <div className="w-full max-w-[600px] h-[400px]">
-            <video className="w-full h-full rounded-[inherit] object-cover" controls preload="auto">
-              <source src="/placeholder-video.mp4" type="video/mp4" />
+          <div className="w-full max-w-[600px] h-[400px] rounded-xl overflow-hidden border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.2)] backdrop-blur-sm">
+            <video className="w-full h-full object-cover" controls preload="auto">
+              <source src="/video/operand-overview-akhil.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

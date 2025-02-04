@@ -54,7 +54,7 @@ export function TaskAnalysis() {
 
                 <div className="relative aspect-[16/9] w-full max-w-sm mx-auto overflow-hidden rounded-lg border-2 border-white shadow-lg">
                   <Image
-                    src="/images/charts/black-white-chart.png"
+                    src="/chart.svg"
                     alt="Discount Level vs Projected Net Revenue Chart"
                     fill
                     className="object-contain"
