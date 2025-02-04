@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { ChevronDown } from "lucide-react"
 
 export function TaskAnalysis() {
@@ -22,67 +21,52 @@ export function TaskAnalysis() {
       </div>
 
       <div className="mt-8 space-y-4">
-        <Accordion type="single" defaultValue="analysis" collapsible>
-          <AccordionItem
-            value="understanding"
-            className="mb-4 overflow-hidden rounded-lg border-2 border-border bg-card"
-          >
-            <AccordionTrigger className="px-6 py-4 text-base font-medium hover:no-underline">
-              {/* Update 1 */}
-              <div className="flex items-center justify-between px-6 py-4 text-base font-medium">
-                <span>Understanding Task</span>
-                <ChevronDown className="h-4 w-4 shrink-0" />
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="border-t border-border bg-background px-6 py-4">
-              {/* Content will be added later */}
-            </AccordionContent>
-          </AccordionItem>
+        {/* Understanding Task - permanently closed */}
+        <div className="mb-4 overflow-hidden rounded-lg border-2 border-border bg-card">
+          <div className="flex items-center justify-between px-6 py-4 text-base font-medium">
+            <span>Understanding Task</span>
+            <ChevronDown className="h-4 w-4 shrink-0" />
+          </div>
+        </div>
 
-          <AccordionItem
-            value="analysis"
-            className="overflow-hidden rounded-lg border-2 border-border bg-card relative before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-white/50 before:animate-border-beam"
-          >
-            <AccordionTrigger className="px-6 py-4 text-base font-medium hover:no-underline">
-              {/* Update 2 */}
-              <div className="flex items-center justify-between px-6 py-4 text-base font-medium">
-                <span>Performing Analysis</span>
-                <ChevronDown className="h-4 w-4 shrink-0 transform rotate-180" />
+        {/* Performing Analysis - permanently open */}
+        <div className="overflow-hidden rounded-lg border-2 border-border bg-card relative before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-white/50 before:animate-border-beam">
+          <div className="flex items-center justify-between px-6 py-4 text-base font-medium">
+            <span>Performing Analysis</span>
+            <ChevronDown className="h-4 w-4 shrink-0 transform rotate-180" />
+          </div>
+          <div className="border-t border-border bg-background px-6 py-4">
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <div className="text-sm font-medium text-muted-foreground">[Update – January 26, 9:13 AM]</div>
+                <p className="text-sm text-muted-foreground">
+                  We've just integrated the latest competitor pricing updates and ad performance signals for the last
+                  week of January. Early comparisons show a slight undercut from two major competitors, prompting us to
+                  reassess both our baseline prices and ongoing ad spend efficiency.
+                </p>
               </div>
-            </AccordionTrigger>
-            <AccordionContent className="border-t border-border bg-background px-6 py-4">
-              <div className="space-y-6">
-                <div className="space-y-3">
-                  <div className="text-sm font-medium text-muted-foreground">[Update – January 26, 9:13 AM]</div>
-                  <p className="text-sm text-muted-foreground">
-                    We've just integrated the latest competitor pricing updates and ad performance signals for the last
-                    week of January. Early comparisons show a slight undercut from two major competitors, prompting us
-                    to reassess both our baseline prices and ongoing ad spend efficiency.
-                  </p>
-                </div>
 
-                <div className="relative aspect-[16/9] w-full max-w-sm mx-auto overflow-hidden rounded-lg border-2 border-white shadow-lg">
-                  <Image
-                    src="/chart.svg"
-                    alt="Discount Level vs Projected Net Revenue Chart"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-
-                <div className="space-y-3">
-                  <div className="text-sm font-medium text-muted-foreground">[Update – January 26, 9:17 AM]</div>
-                  <p className="text-sm text-muted-foreground">
-                    Our model tested discounts ranging from 0% to 10%, and it's currently pointing to a 5% discount as
-                    the most profitable balance, projecting an 11% increase in daily orders with minimal margin erosion.
-                    We'll continue to watch for any major shifts—like sudden competitor drops or spikes in ad costs—and
-                    automatically re-run these simulations if conditions change.
-                  </p>
-                </div>
+              <div className="relative aspect-[16/9] w-full max-w-sm mx-auto overflow-hidden rounded-lg border-2 border-white shadow-lg">
+                <Image
+                  src="/chart.svg"
+                  alt="Discount Level vs Projected Net Revenue Chart"
+                  fill
+                  className="object-contain"
+                />
               </div>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+
+              <div className="space-y-3">
+                <div className="text-sm font-medium text-muted-foreground">[Update – January 26, 9:17 AM]</div>
+                <p className="text-sm text-muted-foreground">
+                  Our model tested discounts ranging from 0% to 10%, and it's currently pointing to a 5% discount as the
+                  most profitable balance, projecting an 11% increase in daily orders with minimal margin erosion. We'll
+                  continue to watch for any major shifts—like sudden competitor drops or spikes in ad costs—and
+                  automatically re-run these simulations if conditions change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
