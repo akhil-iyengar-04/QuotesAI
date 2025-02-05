@@ -36,9 +36,6 @@ export function HeroSection() {
               >
                 Book a Demo
               </Link>
-              <Link href="#features" className={cn(buttonVariants({ variant: "outline", size: "lg" }))}>
-                Learn More
-              </Link>
             </div>
           </div>
         </div>
