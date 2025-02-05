@@ -4,13 +4,13 @@ import { useRef, useMemo, useState, useEffect } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import type * as THREE from "three"
 
-function SpacetimeCurve({ complexity = 1 }) {
+function SpacetimeCurve() {
   const meshRef = useRef<THREE.Group>(null!)
 
   // Parameters for Flamm's paraboloid
   const r_s = 1.0 // Schwarzschild radius
-  const numRadial = Math.floor(20 * complexity) // Reduced from 40
-  const numAngular = Math.floor(20 * complexity) // Reduced from 40
+  const numRadial = 40
+  const numAngular = 40
   const rMax = 10
   const zStretch = 2.0
 
@@ -44,10 +44,8 @@ function SpacetimeCurve({ complexity = 1 }) {
       const offset = k * (numRadial + 1) * verticesPerRow
 
       // Radial lines
-      for (let i = 0; i < numRadial; i += 2) {
-        // Reduced line density
-        for (let j = 0; j <= numAngular; j += 2) {
-          // Reduced line density
+      for (let i = 0; i < numRadial; i++) {
+        for (let j = 0; j <= numAngular; j++) {
           const current = offset + i * verticesPerRow + j
           const next = current + verticesPerRow
           indices.push(current, next)
@@ -55,10 +53,8 @@ function SpacetimeCurve({ complexity = 1 }) {
       }
 
       // Angular lines
-      for (let i = 0; i <= numRadial; i += 2) {
-        // Reduced line density
-        for (let j = 0; j < numAngular; j += 2) {
-          // Reduced line density
+      for (let i = 0; i <= numRadial; i++) {
+        for (let j = 0; j < numAngular; j++) {
           const current = offset + i * verticesPerRow + j
           const next = current + 1
           indices.push(current, next)
@@ -70,7 +66,7 @@ function SpacetimeCurve({ complexity = 1 }) {
       positions: new Float32Array(positions),
       indices: new Uint16Array(indices),
     }
-  }, [numRadial, numAngular])
+  }, [])
 
   useFrame((state) => {
     if (meshRef.current) {
@@ -136,7 +132,7 @@ export function SpacetimeCurveAnimation() {
     <Canvas camera={{ position: [15, 8, 15], fov: 45 }}>
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 10]} intensity={1} />
-      <SpacetimeCurve complexity={isMobile ? 0.5 : 1} />
+      <SpacetimeCurve />
     </Canvas>
   )
 }
