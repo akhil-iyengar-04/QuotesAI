@@ -4,10 +4,11 @@ import dynamic from "next/dynamic"
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Plus } from "lucide-react"
+import { useState, useEffect } from "react"
 
 const SpacetimeCurveAnimation = dynamic(
   () => import("@/components/spacetime-curve").then((mod) => mod.SpacetimeCurveAnimation),
-  { ssr: false, loading: () => <div>Loading...</div> },
+  { ssr: false, loading: () => <div className="w-full h-full bg-gray-800 animate-pulse rounded-xl" /> },
 )
 
 const integrations = [
@@ -42,6 +43,12 @@ const integrations = [
 ]
 
 export function DataManagementSection() {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   return (
     <section className="container py-16 lg:py-24">
       <div className="flex flex-col lg:flex-row gap-12 items-center">
@@ -76,9 +83,7 @@ export function DataManagementSection() {
             </Card>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px]">
-          <SpacetimeCurveAnimation />
-        </div>
+        <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px]">{isClient && <SpacetimeCurveAnimation />}</div>
       </div>
     </section>
   )

@@ -1,7 +1,13 @@
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import ShineBorder from "@/components/ui/shine-border"
+
+const VideoPlayer = dynamic(() => import("@/components/video-player").then((mod) => mod.VideoPlayer), {
+  loading: () => <div className="w-full max-w-[600px] h-[400px] rounded-xl bg-gray-200 animate-pulse" />,
+  ssr: false,
+})
 
 export function HeroSection() {
   return (
@@ -24,7 +30,10 @@ export function HeroSection() {
               or consultants.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="https://calendly.com/akhiliyengar2004/operand" className={cn(buttonVariants({ size: "lg" }))}>
+              <Link
+                href="https://calendly.com/d/cqw5-msn-pf2/operand-intro"
+                className={cn(buttonVariants({ size: "lg" }))}
+              >
                 Book a Demo
               </Link>
               <Link href="#features" className={cn(buttonVariants({ variant: "outline", size: "lg" }))}>
@@ -35,10 +44,7 @@ export function HeroSection() {
         </div>
         <div className="relative hidden lg:flex items-end justify-center">
           <div className="w-full max-w-[600px] h-[400px] rounded-xl overflow-hidden border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.2)] backdrop-blur-sm">
-            <video className="w-full h-full object-cover" controls preload="auto">
-              <source src="/video/operand-overview-akhil-short.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <VideoPlayer />
           </div>
         </div>
       </div>

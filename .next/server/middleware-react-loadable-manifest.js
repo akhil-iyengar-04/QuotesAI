@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST='{"components/data-management-section.tsx -> @/components/spacetime-curve":{"id":663,"files":["static/chunks/d1509622.e9bbb89cd08aca06.js","static/chunks/743.06108e703919b9ee.js","static/chunks/663.0fd737d30dc71209.js"]}}';
+self.__REACT_LOADABLE_MANIFEST='{"components/data-management-section.tsx -> @/components/spacetime-curve":{"id":663,"files":["static/chunks/d1509622.e9bbb89cd08aca06.js","static/chunks/743.06108e703919b9ee.js","static/chunks/663.40f391ae3c4c180d.js"]}}';

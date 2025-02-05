@@ -1,0 +1,1 @@
+"use strict";exports.id=337,exports.ids=[337],exports.modules={9337:(e,r,s)=>{s.r(r),s.d(r,{VideoPlayer:()=>t});let t=(0,s(497).createProxy)(String.raw`/Users/kanshruti/Documents/GitHub/QuotesAI/components/video-player.tsx#VideoPlayer`)}};
