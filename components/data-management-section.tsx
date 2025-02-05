@@ -1,7 +1,14 @@
+"use client"
+
+import dynamic from "next/dynamic"
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Plus } from "lucide-react"
-import { SpacetimeCurveAnimation } from "@/components/spacetime-curve"
+
+const SpacetimeCurveAnimation = dynamic(
+  () => import("@/components/spacetime-curve").then((mod) => mod.SpacetimeCurveAnimation),
+  { ssr: false, loading: () => <div>Loading...</div> },
+)
 
 const integrations = [
   {

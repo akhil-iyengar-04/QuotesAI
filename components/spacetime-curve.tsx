@@ -70,7 +70,7 @@ function SpacetimeCurve() {
 
   useFrame((state) => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.003 // Increased rotation speed
+      meshRef.current.rotation.y += 0.003
     }
   })
 

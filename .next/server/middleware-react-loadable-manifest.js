@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}";
+self.__REACT_LOADABLE_MANIFEST='{"components/data-management-section.tsx -> @/components/spacetime-curve":{"id":3362,"files":["static/chunks/b536a0f1.69e6f0c640780c54.js","static/chunks/496.4f40bfed096bafa0.js","static/chunks/362.d310ec342ce23e9c.js"]}}';

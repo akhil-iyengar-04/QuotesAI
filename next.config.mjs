@@ -1,3 +1,5 @@
+import { default as bundleAnalyzer } from '@next/bundle-analyzer'
+
 let userConfig = undefined
 try {
   userConfig = await import('./v0-user-next.config')
@@ -21,6 +23,7 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  transpilePackages: ['three'],
 }
 
 mergeConfig(nextConfig, userConfig)
@@ -45,4 +48,9 @@ function mergeConfig(nextConfig, userConfig) {
   }
 }
 
-export default nextConfig
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+export default withBundleAnalyzer(nextConfig)
+
