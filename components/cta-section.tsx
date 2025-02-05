@@ -14,7 +14,7 @@ export function CTASection() {
         </p>
         <div className="pt-4">
           <Button asChild size="lg">
-            <Link href="https://calendly.com/akhiliyengar2004/operand">Book a Demo</Link>
+            <Link href="https://calendly.com/d/cmzk-vyr-2s8">Book a Demo</Link>
           </Button>
         </div>
       </div>

@@ -32,7 +32,7 @@ export function MainNav() {
               Read our Whitepaper
             </Link>
             <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link href="https://calendly.com/d/cqw5-msn-pf2/operand-intro" target="_blank" rel="noopener noreferrer">
+              <Link href="https://calendly.com/d/cmzk-vyr-2s8" target="_blank" rel="noopener noreferrer">
                 Request a Demo
               </Link>
             </Button>

@@ -43,7 +43,7 @@ export function ServiceCard({ title, description, flagship, isCustom, icon }: Se
           <p className="text-sm text-muted-foreground">
             {description}
             {isCustom && (
-              <Link href="https://calendly.com/akhiliyengar2004/operand" className="text-primary hover:underline ml-1">
+              <Link href="https://calendly.com/d/cmzk-vyr-2s8" className="text-primary hover:underline ml-1">
                 Book a demo
               </Link>
             )}

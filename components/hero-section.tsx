@@ -31,7 +31,7 @@ export function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
-                href="https://calendly.com/d/cqw5-msn-pf2/operand-intro"
+                href="https://calendly.com/d/cmzk-vyr-2s8"
                 className={cn(buttonVariants({ size: "lg" }))}
               >
                 Book a Demo
