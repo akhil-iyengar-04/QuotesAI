@@ -4,7 +4,7 @@ import { MessageCircle, Mail, Globe } from "lucide-react"
 
 const services = [
   {
-    title: "Pricing & Promotion Optimization",
+    title: "Pricing & Promotion Strategy",
     description:
       "Operand factors in competitor pricing, ad performance, inventory levels, and demand trends to recommend strategic price changes and promotions that maximize revenue and profitability.",
     flagship: true,
