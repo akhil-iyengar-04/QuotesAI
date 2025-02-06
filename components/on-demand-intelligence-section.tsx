@@ -36,7 +36,7 @@ export function OnDemandIntelligenceSection() {
       <div className="flex flex-col lg:flex-row gap-12 items-start">
         <div className="w-full lg:w-1/2 space-y-8">
           <div className="space-y-4">
-            <p className="text-xs font-bold text-foreground uppercase tracking-wide">Your own data consultant</p>
+            <p className="text-xs font-bold text-foreground uppercase tracking-wide">Your own consultant</p>
             <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight">
               Ask a business question, get a rigorous analysis.
             </h2>
