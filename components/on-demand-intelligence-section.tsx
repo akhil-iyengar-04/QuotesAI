@@ -1,5 +1,6 @@
 import { ServiceCard } from "@/components/service-card"
 import { TaskAnalysis } from "@/components/task-analysis"
+import { MessageCircle, Mail, Globe } from "lucide-react"
 
 const services = [
   {
@@ -16,9 +17,9 @@ const services = [
     icon: "/images/icons/ad-icon.svg",
   },
   {
-    title: "Customer Segmentation",
+    title: "Customer Engagement",
     description:
-      "Operand clusters customers based on purchase behavior, engagement, and lifetime value, helping you personalize marketing, optimize retention, and improve targeting strategies with data-backed precision.",
+      "Operand clusters customers based on purchase behavior, interactions, and lifetime value, helping you personalize marketing, optimize retention, and improve targeting strategies with data-backed precision.",
     icon: "/images/icons/customer-icon.svg",
   },
   {
@@ -30,9 +31,15 @@ const services = [
   },
 ]
 
+const communicationChannels = [
+  { name: "Slack", icon: MessageCircle },
+  { name: "Email", icon: Mail },
+  { name: "Operand Platform", icon: Globe },
+]
+
 export function OnDemandIntelligenceSection() {
   return (
-    <section className="container py-16 lg:py-24">
+    <section id="on-demand-intelligence" className="container py-16 lg:py-24">
       <div className="flex flex-col lg:flex-row gap-12 items-start">
         <div className="w-full lg:w-1/2 space-y-8">
           <div className="space-y-4">
@@ -44,6 +51,17 @@ export function OnDemandIntelligenceSection() {
               Operand interprets your question, analyzes your data, and delivers a deeply considered
               recommendation—grounded in operational understanding and real numbers.
             </p>
+          </div>
+          <div className="space-y-4">
+            <p className="text-sm font-medium text-foreground">Ask your questions through:</p>
+            <div className="flex flex-wrap gap-4">
+              {communicationChannels.map((channel) => (
+                <div key={channel.name} className="flex items-center space-x-2 bg-secondary rounded-full px-4 py-2">
+                  <channel.icon className="w-4 h-4" />
+                  <span className="text-sm font-medium">{channel.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="space-y-3">
             {services.map((service, index) => (
