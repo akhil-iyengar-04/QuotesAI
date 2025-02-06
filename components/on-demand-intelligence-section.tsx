@@ -24,7 +24,7 @@ const services = [
   {
     title: "Need a Custom Solution?",
     description:
-      "We're expanding our capabilities—if you have a specific data-driven challenge in retail or e-commerce, talk to us to how Operand can help. ",
+      "We're expanding our capabilities—if you have a specific data-driven challenge in retail or e-commerce, talk to us to see how Operand can help. ",
     isCustom: true,
     icon: "/images/icons/question-circle-icon.svg",
   },
