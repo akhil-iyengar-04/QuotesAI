@@ -9,7 +9,7 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Operand - AI To Run Consumer Brands",
+  title: "Operand",
   description: "Making data-driven decisions for retail & e-commerce.",
 }
 
