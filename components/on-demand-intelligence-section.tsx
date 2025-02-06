@@ -41,8 +41,11 @@ export function OnDemandIntelligenceSection() {
               Ask a business question, get a rigorous analysis.
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed">
-            Operand interprets your questions, analyzes your data, and delivers deeply considered recommendations—all through Slack, email, or our platform. 
-            Get insights grounded in operational understanding and real numbers.
+              Operand analyzes your data and delivers deeply considered recommendations—directly through Slack, email,
+              or our platform.
+            </p>
+            <p className="text-base text-muted-foreground leading-relaxed">
+              Every insight is grounded in real numbers and operational understanding of your business.
             </p>
           </div>
           <div className="space-y-3">
@@ -58,4 +61,3 @@ export function OnDemandIntelligenceSection() {
     </section>
   )
 }
-
